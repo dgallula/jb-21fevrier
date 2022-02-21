@@ -1,11 +1,11 @@
 import candiesDal from "../data-acces-layer/candies-dal.js"
 
-const GetAll= ()=> {
-    return candiesDal.GetAll()
+const getAll= ()=> {
+    return candiesDal.getAll()
 }
 
 const getById = id => {
-    let candies = candiesDal.GetAll()
+    let candies = candiesDal.getAll()
     let requestedCandy = candies.find(candy.id===id)
 
     return requestedCandy ?? {}
@@ -15,7 +15,7 @@ const getById = id => {
 
 
 export default {
-    GetAll,
+    getAll,
     getById
 }
 

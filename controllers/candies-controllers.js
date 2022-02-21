@@ -6,13 +6,18 @@ const router = express.Router()
 const baseUrl = '/api'
 
 router.get(`${baseUrl}/candies`, (req, res)=> {
-    let result = candiesBl.GetAll()
+    let result = candiesBl.getAll()
     res.send(result)
 })
 
 router.get(`${baseUrl}/candies/:id`, (req, res)=> {
-    let result = candiesBl.GetAll()
+    let id = +req.params.id;
+
+    let result = candiesBl.getById()
+    res.send(result)
 })
 
 
-export {router}
+export {
+    router
+}
