@@ -1,0 +1,13 @@
+{
+  "name": "jb-21fevrier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serveur.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app serveur.js"
+  },
+  "type": "module",
+  "author": "david",
+  "license": "ISC"
+}
